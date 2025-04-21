@@ -1,0 +1,96 @@
+/* 限動寬度統一 */
+.story-item {
+    width: 120px;
+  }
+  
+  /* 外層漸層框（IG 限動風格） */
+  .story-avatar-wrapper {
+    width: 90px;
+    height: 90px;
+    padding: 3px;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  }
+  
+  /* 內層白邊 */
+  .story-avatar {
+    border: 2px solid white;
+  }
+  .story-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+/* 正方形圖片容器 */
+.post-image-container {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* 1:1 高度比例 */
+    overflow: hidden;
+    border-radius: 0.5rem;
+  }
+  .post-image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  /*個人資料卡*/
+  .profile-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  } 
+/* ---------- 右側推薦卡片 Sticky 效果修正 ---------- */
+.right-sticky {
+  position: sticky;
+  top: 80px;          /* navbar 高度略大即可避免遮擋 */
+  z-index: 1;         /* 不要遮住下方區塊 */
+}
+
+/* ---------- 專區清單樣式 ---------- */
+.zone-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.zone-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  font-size: 1.1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  text-decoration: none;
+  color: #212529;
+  transition: background-color 0.2s;
+}
+
+.zone-item:hover {
+  background-color: #f8f9fa;
+}
+
+.zone-count {
+  color: #6c757d;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* ---------- 功能區塊錨點下拉不被擋住 ---------- */
+#chat,
+#games,
+#shop {
+  scroll-margin-top: 100px;
+}
+.btn i {
+  font-size: 2.8rem;
+}
+.btn span {
+  font-size: 1.6rem;
+}
